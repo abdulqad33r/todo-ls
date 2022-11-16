@@ -1,0 +1,270 @@
+.fireflies {
+  width: 100vw;
+  height: 100vh;
+  transition: all 2s;
+  overflow: hidden;
+  position: relative;
+}
+.firefly {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+.firefly img {
+  position: absolute;
+  width: 1.6rem;
+  bottom: -8px;
+  right: -10px;
+}
+
+.firefly-1 {
+  left: -5%;
+  top: 10%;
+  animation: ease firefly-1 20s alternate infinite,
+    linear throb 1s alternate infinite;
+}
+@keyframes firefly-1 {
+  0% {
+    left: -5%;
+  }
+  30% {
+    left: 50%;
+    top: 10%;
+  }
+  70% {
+    top: 90%;
+    left: 30%;
+  }
+  100% {
+    left: 100%;
+    top: 40%;
+  }
+}
+.firefly-2 {
+  left: -5%;
+  top: 60%;
+  animation: ease firefly-2 30s alternate infinite,
+    linear throb 0.9s alternate infinite;
+  z-index: -1;
+}
+@keyframes firefly-2 {
+  0% {
+    left: -30%;
+  }
+  30% {
+    left: 10%;
+    top: -10%;
+  }
+  70% {
+    top: 70%;
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+    top: 40%;
+  }
+}
+.firefly-3 {
+  right: -5%;
+  top: 30%;
+  animation: ease firefly-3 16s alternate infinite,
+    linear throb 0.8s alternate infinite;
+}
+@keyframes firefly-3 {
+  0% {
+    right: -10%;
+  }
+  30% {
+    right: 50%;
+    top: 30%;
+  }
+  70% {
+    top: 70%;
+    right: 30%;
+  }
+  100% {
+    right: 100%;
+    top: 40%;
+  }
+}
+.firefly-4 {
+  right: -5%;
+  top: 50%;
+  animation: ease firefly-4 15s alternate infinite,
+    linear throb 0.7s alternate infinite;
+}
+@keyframes firefly-4 {
+  0% {
+    left: -5%;
+  }
+  30% {
+    left: 10%;
+    top: 10%;
+  }
+  70% {
+    top: 100%;
+    left: 20%;
+  }
+  100% {
+    left: 10%;
+    top: 40%;
+  }
+}
+.firefly-5 {
+  left: 50%;
+  top: 40%;
+  animation: ease firefly-5 25s alternate infinite,
+    linear throb 0.85s alternate infinite;
+  z-index: -1;
+}
+@keyframes firefly-5 {
+  0% {
+    right: -30%;
+  }
+  30% {
+    right: 20%;
+    top: 10%;
+  }
+  70% {
+    top: 90%;
+    right: 30%;
+  }
+  100% {
+    right: 100%;
+    top: 70%;
+  }
+}
+.firefly-6 {
+  right: -5%;
+  top: 10%;
+  animation: ease firefly-6 18s alternate infinite,
+    linear throb 0.65s alternate infinite;
+  z-index: -1;
+}
+@keyframes firefly-6 {
+  0% {
+    right: 30%;
+    top: 5%;
+  }
+  30% {
+    right: 28%;
+    top: 10%;
+  }
+  70% {
+    top: 90%;
+    right: 40%;
+  }
+  100% {
+    right: 10%;
+    top: -5%;
+  }
+}
+.firefly-7 {
+  right: -5%;
+  top: 10%;
+  animation: ease firefly-7 21s alternate-reverse infinite,
+    linear throb 0.95s alternate infinite;
+}
+@keyframes firefly-7 {
+  0% {
+    left: 10%;
+    top: -5%;
+  }
+  30% {
+    left: 1%;
+    top: 70%;
+  }
+  70% {
+    left: 100%;
+    top: -6%;
+  }
+  100% {
+    left: -5%;
+    top: 60%;
+  }
+}
+.firefly-8 {
+  left: -5%;
+  top: -5%;
+  animation: ease firefly-8 26s alternate-reverse infinite,
+    linear throb 1.05s alternate infinite;
+  z-index: -1;
+}
+@keyframes firefly-8 {
+  0% {
+    left: -5%;
+    top: 35%;
+  }
+  30% {
+    left: 50%;
+    top: -3%;
+  }
+  70% {
+    left: 100%;
+    top: 10%;
+  }
+  100% {
+    left: 50%;
+    top: 32%;
+  }
+}
+.firefly-9 {
+  right: -5%;
+  top: 60%;
+  animation: ease firefly-9 18s alternate-reverse infinite,
+    linear throb 0.75s alternate infinite;
+  z-index: -1;
+}
+@keyframes firefly-9 {
+  0% {
+    right: 10%;
+    top: 50%;
+  }
+  50% {
+    right: 90%;
+    top: 66%;
+  }
+  100% {
+    right: 85%;
+    top: 72%;
+  }
+}
+.firefly-10 {
+  left: 50%;
+  top: -5%;
+  animation: ease firefly-10 22s alternate-reverse infinite,
+    linear throb 1.2s alternate infinite;
+}
+@keyframes firefly-10 {
+  0% {
+    left: 10%;
+    top: 10%;
+  }
+  30% {
+    left: 100%;
+    top: 2%;
+  }
+  100% {
+    left: -5%;
+    top: 33%;
+  }
+}
+
+@keyframes throb {
+  0% {
+    background-color: #212f3c;
+    filter: brightness(30%);
+    opacity: 0.5;
+    /* box-shadow: rgb(163, 182, 119) 0 0 5px 3px; */
+  }
+  100% {
+    filter: brightness(100%);
+    opacity: 1;
+    background-color: rgb(215, 236, 118);
+    box-shadow: rgb(163, 182, 119) 0 0 30px 15px;
+  }
+}
+
+/* top: 70%; */
