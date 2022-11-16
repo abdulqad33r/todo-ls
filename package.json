@@ -1,11 +1,9 @@
 {
-  "homepage": "https://abdul-qad33r.github.io/todo-ls",
   "name": "after-ruining-todo-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
